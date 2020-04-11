@@ -490,8 +490,8 @@ pre {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 10px;
+  padding-left: 10px; }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -3383,6 +3383,8 @@ input[type="button"].btn-block {
     color: #6c757d;
     pointer-events: none;
     cursor: default; }
+
+
 
 .nav-tabs {
   border-bottom: 1px solid #dee2e6; }
@@ -9249,7 +9251,7 @@ textarea.form-control {
   .testimony-section .owl-carousel {
     margin: 0; }
   .testimony-section .owl-carousel .owl-stage-outer {
-    padding-top: 4em;
+    padding-top: 0;
     padding-bottom: 2em;
     position: relative; }
   .testimony-section .owl-nav {
@@ -9909,3 +9911,67 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+  .formNav > li a{
+    color: #fff;
+  }
+
+  
+  .formNav > li a{
+    padding: 0.5em;
+  margin: 3px; }
+    
+    .formNav > li a:hover{
+     color: red; }
+
+     
+    .formNav > li a:active {
+      color: aquamarine;
+    }
+    
+      .formNav > li a.disabled {
+      color: #0965b6;
+      pointer-events: none;
+      cursor: default; }
+
+
+#worksForm li a{
+  color: #fff;
+  font-size: 1em;
+}
+
+#worksForm li a:hover {
+  color: #069;
+  border-bottom: 1px solid #069;
+}
+
+#worksForm .active{
+  color: #069;
+}
+
+.staff div ul li{
+color: #000;
+}
+
+.staff div h3{
+  color: #fc0;
+  }
+
+  #customers img{
+    width: 45%;
+    float: left;
+    margin: 1.25%;
+  }
+
+  }
+
+  @media (max-width: 767.98px) {
+    #customers img{
+      width: 65%;
+      margin: 0.5em 20%;
+    }
+  }
+
+  .footer-logo{
+    margin-top: -50px;
+  }

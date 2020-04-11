@@ -76,9 +76,9 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav">
-					<li class="nav-item active"><a href="index.html" class="nav-link pl-0">Tiassa</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">Punto de Venta</a></li>
-					<li class="nav-item"><a href="project.html" class="nav-link">Industrias</a></li>
+					<li class="nav-item active"><a href="index.html" class="nav-link pl-0">Inicio</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li>
+					<li class="nav-item"><a href="project.html" class="nav-link">Proyectos</a></li>
 					<li class="nav-item"><a href="blog.html" class="nav-link">Noticias</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Cotizaciones</a></li>
 				</ul>
@@ -109,7 +109,8 @@
 					data-scrollax-parent="true">
 					<div class="col-md-6 text ftco-animate pl-md-5">
 						<h1 class="mb-4">Servicios <span>Metalmecanica</span></h1>
-						<h3 class="subheading">Fabricación, reparaciones, soldadura, rectificación, corte, rolado, materiales y más... </h3>
+						<h3 class="subheading">Fabricación, reparaciones, soldadura, rectificación, corte, rolado,
+							materiales y más... </h3>
 						<p><a href="#cotizacion" class="btn btn-secondary px-4 py-3 mt-3">Cotice aquí</a></p>
 					</div>
 				</div>
@@ -119,55 +120,144 @@
 
 
 	<section id="cotizacion" class="ftco-section ftco-no-pt ftco-margin-top">
+
+
+
+		<!-- Nav tabs -->
+		<!--<ul class="nav " role="tablist">
+						<li role="presentation" class="active"><a href="#webdesign" aria-controls="webdesign" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i> <br />WEB DESIGN</a></li>
+						<li role="presentation"><a href="#appdesign" aria-controls="appdesign" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i> <br />APP DESIGN</a></li>
+					</ul>-->
+
+		<!-- Tab panes -->
+		<!--<div class="tab-content">
+						<form role="tabpanel" class="tab-pane active" id="webdesign">
+							
+										<div class="single_tab_content">
+											<h1>Hola</h1>
+										</div>
+									
+						</form>
+						<form role="tabpanel" class="tab-pane" id="appdesign">
+							
+										<div class="single_tab_content">
+											<h1>Mundo</h1>
+										</div>
+									
+						</form>
+					   
+					</div>-->
+
+
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="request-quote">
 						<div class="bg-primary py-4">
 							<span class="subheading">Trabajemos Juntos</span>
-							<h3>Cotización</h3>
+							<ul class="nav navbar" id="worksForm" role="tablist">
+								<li role="presentation" class="active nav-item "><a href="#form1" class="nav-link" aria-controls="form1" role="tab"
+										data-toggle="tab"><i class="fa fa-map-marker"></i>
+										Cotización
+									</a></li>
+								<li role="presentation" class="nav-item"><a href="#form2" class="nav-link" aria-controls="form2" role="tab"
+										data-toggle="tab"><i class="fa fa-map-marker"></i>
+										Servicios rapidos
+									</a></li>
+
+							</ul>
+							<!--<h3>Cotización</h3>-->
 						</div>
-						<form action="#" class="request-form ftco-animate">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Nombre">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Empresa">
-							</div>
-							<div class="form-group">
-								<div class="form-field">
-									<div class="select-wrap">
-										<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-										<select name="" id="" class="form-control">
-											<option value="">Seleccione tipo de Industria</option>
-											<option value="">Construcción</option>
-											<option value="">Alimenticia</option>
-											<option value="">Agregado</option>
-											<option value="">Agropecuaria</option>
-											<option value="">Otra</option>
-										</select>
+						<div class="tab-content">
+
+							<div role="tabpanel" class=" tab-pane active" id="form1">
+								<form action="#" class="request-form ftco-animate single_tab_content">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Nombre o Empresa">
 									</div>
-								</div>
+									<div class="form-group">
+										<div class="form-field">
+											<div class="select-wrap">
+												<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+												<select name="" id="" class="form-control">
+													<option value="">Seleccione tipo de Industria</option>
+													<option value="">Construcción</option>
+													<option value="">Alimenticia</option>
+													<option value="">Agregado</option>
+													<option value="">Agropecuaria</option>
+													<option value="">Otra</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Teléfono">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<textarea name="" id="" cols="30" rows="2" class="form-control"
+											placeholder="Mensaje"></textarea>
+									</div>
+									<div class="form-group">
+										<input type="file" class="custom-file-input form-control"
+											placeholder="Cargar archivo" id="validatedCustomFile" required>
+										<label class="custom-file-label" for="validatedCustomFile">Elija un
+											archivo...</label>
+									</div>
+									<div class="form-group">
+										<input type="submit" value="Enviar" class="btn btn-primary py-3 px-4">
+									</div>
+								</form>
 							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Teléfono">
+
+							<div role="tabpanel" class=" tab-pane" id="form2">
+								<form action="#" class="request-form ftco-animate single_tab_content">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Nombre o Empresa">
+									</div>
+									<div class="form-group">
+										<div class="form-field">
+											<div class="select-wrap">
+												<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+												<select name="" id="" class="form-control">
+													<option value="">Seleccione el tipo de servicio</option>
+													<option value="">Perforacion de Placa</option>
+													<option value="">Doblado de lamina</option>
+													<option value="">Rolado de lamina</option>
+													<option value="">Rolado de Tuberia</option>
+													<option value="">Rolado de Pines de Ancaje</option>
+													<option value="">Termorociado</option>
+													<option value="">Otra</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Teléfono">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<textarea name="" id="" cols="30" rows="2" class="form-control"
+											placeholder="Descripción del trabajo"></textarea>
+									</div>
+									<div class="form-group">
+										<input type="file" class="custom-file-input form-control"
+											placeholder="Cargar archivo" id="validatedCustomFile" required>
+										<label class="custom-file-label" for="validatedCustomFile">Elije un
+											archivo...</label>
+									</div>
+									<div class="form-group">
+										<input type="submit" value="Enviar" class="btn btn-primary py-3 px-4">
+									</div>
+								</form>
 							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Email">
-							</div>
-							<div class="form-group">
-								<textarea name="" id="" cols="30" rows="2" class="form-control"
-									placeholder="Mensaje"></textarea>
-							</div>
-							<div class="form-group">
-								<!--<input type="text" class="form-control" placeholder="Cargar archivo">-->
-								<input type="file" class="custom-file-input form-control" placeholder="Cargar archivo" id="validatedCustomFile" required>
-								<label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-							</div>
-							<div class="form-group">
-								<input type="submit" value="Enviar" class="btn btn-primary py-3 px-4">
-							</div>
-						</form>
+							
+						</div>
 					</div>
 				</div>
 				<div class="col-md-8 wrap-about py-5 ftco-animate">
@@ -180,6 +270,8 @@
 					</div>
 				</div>
 			</div>
+
+		</div>
 		</div>
 	</section>
 
@@ -304,7 +396,8 @@
 				<div class="col-md-8 text-center heading-section ftco-animate">
 					<span class="subheading">Industrias</span>
 					<h2 class="mb-4">Areas Industriales</h2>
-					<p>De la mano con nuestra calidad y soporte brindamos soluciones integrales a diferentes areas del sector industrial.</p>
+					<p>De la mano con nuestra calidad y soporte brindamos soluciones integrales a diferentes areas del
+						sector industrial.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -412,7 +505,7 @@
 		<div class="container-fluid p-0">
 			<div class="row no-gutters justify-content-center mb-5 pb-2">
 				<div class="col-md-6 text-center heading-section ftco-animate">
-					<span class="subheading">Proqyectos</span>
+					<span class="subheading">Proyectos</span>
 					<h2 class="mb-4">Algunos de Nuestros Proyectos</h2>
 					<p>Separated they live in. A small river named Duden flows by their place and supplies it with the
 						necessary regelialia. It is a paradisematic country</p>
@@ -579,8 +672,8 @@
 			<div class="row ftco-animate">
 				<div class="col-md-6 col-lg-6 col-xl-4">
 					<div class="heading-section ftco-animate">
-						<span class="subheading">Services</span>
-						<h2 class="mb-4">Experience Great Services</h2>
+						<span class="subheading">Servicios</span>
+						<h2 class="mb-4">Tenemos a su servicio</h2>
 					</div>
 					<div class="services-flow">
 						<div class="services-2 p-4 d-flex ftco-animate">
@@ -588,8 +681,8 @@
 								<span class="flaticon-engineer"></span>
 							</div>
 							<div class="text">
-								<h3>Expert &amp; Professional</h3>
-								<p>Separated they live in. A small river named Duden flows</p>
+								<h3>Personal Capacitado</h3>
+								<p>Contamos con personal especializado y técnicos en diferentes areas de trabajo.</p>
 							</div>
 						</div>
 						<div class="services-2 p-4 d-flex ftco-animate">
@@ -597,8 +690,8 @@
 								<span class="flaticon-engineer-1"></span>
 							</div>
 							<div class="text">
-								<h3>High Quality Work</h3>
-								<p>Separated they live in. A small river named Duden flows</p>
+								<h3>Trabajos Grarantizado</h3>
+								<p>Garantizamos trabajos de calidad y durabilidad</p>
 							</div>
 						</div>
 						<div class="services-2 p-4 d-flex ftco-animate">
@@ -606,8 +699,8 @@
 								<span class="flaticon-engineer-2"></span>
 							</div>
 							<div class="text">
-								<h3>24/7 Help Support</h3>
-								<p>Separated they live in. A small river named Duden flows</p>
+								<h3>Asesoramiento</h3>
+								<p>Brindamos asesoramiento y trato especializado para realizar un trabajo exitoso</p>
 							</div>
 						</div>
 					</div>
@@ -615,15 +708,15 @@
 				<div class="col-xl-1 d-xl-block d-none"></div>
 				<div class="col-md-6 col-lg-6 col-xl-7">
 					<div class="heading-section ftco-animate mb-5">
-						<span class="subheading">Testimonials</span>
-						<h2 class="mb-4">Satisfied Customer</h2>
-						<p>Separated they live in. A small river named Duden flows by their place and supplies it with
-							the necessary regelialia. It is a paradisematic country</p>
+						<span class="subheading">Clientes</span>
+						<h2 class="mb-4">Nuestros Clientes Satisfechos</h2>
+						<!--<p>Separated they live in. A small river named Duden flows by their place and supplies it with
+							the necessary regelialia. It is a paradisematic country</p>-->
 					</div>
-					<div class="carousel-testimony owl-carousel">
+					<div class="carousel-testimony owl-carousel" id="customers">
 						<div class="item">
 							<div class="testimony-wrap">
-								<div class="text bg-light p-4">
+								<!--<div class="text bg-light p-4">
 									<span class="quote d-flex align-items-center justify-content-center">
 										<i class="icon-quote-left"></i>
 									</span>
@@ -631,69 +724,43 @@
 										Consonantia, there live the blind texts.</p>
 									<p class="name">Racky Henderson</p>
 									<span class="position">Farmer</span>
-								</div>
-								<div class="user-img" style="background-image: url(images/person_1.jpg)">
-								</div>
+								</div>-->
+								<img src="images/clients/01.jpg" alt="Cargill">
+								<img src="images/clients/02.jpg" alt="Cargill">
+								<img src="images/clients/03.jpg" alt="Cargill">
+								<img src="images/clients/04.jpg" alt="Cargill">
 							</div>
 						</div>
 						<div class="item">
 							<div class="testimony-wrap">
-								<div class="text bg-light p-4">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and
-										Consonantia, there live the blind texts.</p>
-									<p class="name">Henry Dee</p>
-									<span class="position">Businessman</span>
-								</div>
-								<div class="user-img" style="background-image: url(images/person_2.jpg)">
-								</div>
+								<img src="images/clients/05.jpg" alt="Cargill">
+								<img src="images/clients/06.jpg" alt="Cargill">
+								<img src="images/clients/07.jpg" alt="Cargill">
+								<img src="images/clients/08.jpg" alt="Cargill">
 							</div>
 						</div>
 						<div class="item">
 							<div class="testimony-wrap">
-								<div class="text bg-light p-4">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and
-										Consonantia, there live the blind texts.</p>
-									<p class="name">Mark Huff</p>
-									<span class="position">Students</span>
-								</div>
-								<div class="user-img" style="background-image: url(images/person_3.jpg)">
-								</div>
+								<img src="images/clients/09.jpg" alt="Cargill">
+								<img src="images/clients/10.jpg" alt="Cargill">
+								<img src="images/clients/11.jpg" alt="Cargill">
+								<img src="images/clients/12.jpg" alt="Cargill">
 							</div>
 						</div>
 						<div class="item">
 							<div class="testimony-wrap">
-								<div class="text bg-light p-4">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and
-										Consonantia, there live the blind texts.</p>
-									<p class="name">Rodel Golez</p>
-									<span class="position">Striper</span>
-								</div>
-								<div class="user-img" style="background-image: url(images/person_4.jpg)">
-								</div>
+								<img src="images/clients/13.jpg" alt="Cargill">
+								<img src="images/clients/14.jpg" alt="Cargill">
+								<img src="images/clients/15.jpg" alt="Cargill">
+								<img src="images/clients/16.jpg" alt="Cargill">
 							</div>
 						</div>
 						<div class="item">
 							<div class="testimony-wrap">
-								<div class="text bg-light p-4">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and
-										Consonantia, there live the blind texts.</p>
-									<p class="name">Ken Bosh</p>
-									<span class="position">Manager</span>
-								</div>
-								<div class="user-img" style="background-image: url(images/person_1.jpg)">
-								</div>
+								<img src="images/clients/17.jpg" alt="Cargill">
+								<img src="images/clients/18.jpg" alt="Cargill">
+								<img src="images/clients/19.jpg" alt="Cargill">
+								<img src="images/clients/20.jpg" alt="Cargill">
 							</div>
 						</div>
 					</div>
@@ -707,10 +774,9 @@
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-2">
 				<div class="col-md-8 text-center heading-section ftco-animate">
-					<span class="subheading">Blog</span>
-					<h2 class="mb-4">Recent Blog</h2>
-					<p>Separated they live in. A small river named Duden flows by their place and supplies it with the
-						necessary regelialia. It is a paradisematic country</p>
+					<span class="subheading">Noticias</span>
+					<h2 class="mb-4">Ultimas Noticias</h2>
+					<p>Noticias y temas de interés sobre nuestros trabajos y proximos proyectos</p>
 				</div>
 			</div>
 			<div class="row">
@@ -729,12 +795,9 @@
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 								there live the blind texts.</p>
 							<div class="d-flex align-items-center mt-4">
-								<p class="mb-0"><a href="#" class="btn btn-primary">Read More <span
+								<p class="mb-0"><a href="#" class="btn btn-primary">Leer Más <span
 											class="ion-ios-arrow-round-forward"></span></a></p>
-								<p class="ml-auto mb-0">
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
+							
 							</div>
 						</div>
 					</div>
@@ -754,12 +817,8 @@
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 								there live the blind texts.</p>
 							<div class="d-flex align-items-center mt-4">
-								<p class="mb-0"><a href="#" class="btn btn-primary">Read More <span
+								<p class="mb-0"><a href="#" class="btn btn-primary">Leer Más <span
 											class="ion-ios-arrow-round-forward"></span></a></p>
-								<p class="ml-auto mb-0">
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
 							</div>
 						</div>
 					</div>
@@ -779,12 +838,8 @@
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 								there live the blind texts.</p>
 							<div class="d-flex align-items-center mt-4">
-								<p class="mb-0"><a href="#" class="btn btn-primary">Read More <span
+								<p class="mb-0"><a href="#" class="btn btn-primary">Leer Más <span
 											class="ion-ios-arrow-round-forward"></span></a></p>
-								<p class="ml-auto mb-0">
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
 							</div>
 						</div>
 					</div>
@@ -798,9 +853,10 @@
 			<div class="row mb-5">
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-5">
-						<h2 class="ftco-heading-2 logo"><span class="flaticon-bee"></span>Bee.</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.</p>
+						<h2 ><img class="logo footer-logo" src="images/logoTiassa.svg"
+							alt="logoTiassa"></a></h2>
+						
+						<p>Somos una empresa con experiencia y que se esmera por generar confianza de nuestros clientes, además contamos con la experiencia necesaria para su llevar su proyecto con existo.</p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
 							<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -813,12 +869,14 @@
 					<div class="ftco-footer-widget mb-5 ml-md-4">
 						<h2 class="ftco-heading-2">Services</h2>
 						<ul class="list-unstyled">
-							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Construction</a></li>
-							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Renovation</a></li>
-							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Painting</a></li>
-							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Interior Design</a>
+							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Corte de lámina</a></li>
+							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Perforación de placa</a></li>
+							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Doblado de lámina</a></li>
+							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Rolado de lámina</a>
 							</li>
-							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Exterior Design</a>
+							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Rolado de pines de anclaje</a>
+							</li>
+							<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Termorociado</a>
 							</li>
 						</ul>
 					</div>
@@ -833,8 +891,6 @@
 								</h3>
 								<div class="meta">
 									<div><a href="#"><span class="icon-calendar"></span> Feb. 07, 2018</a></div>
-									<div><a href="#"><span class="icon-person"></span> Admin</a></div>
-									<div><a href="#"><span class="icon-chat"></span> 19</a></div>
 								</div>
 							</div>
 						</div>
@@ -845,8 +901,6 @@
 								</h3>
 								<div class="meta">
 									<div><a href="#"><span class="icon-calendar"></span> Feb. 07, 2018</a></div>
-									<div><a href="#"><span class="icon-person"></span> Admin</a></div>
-									<div><a href="#"><span class="icon-chat"></span> 19</a></div>
 								</div>
 							</div>
 						</div>
@@ -854,12 +908,17 @@
 				</div>
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-5">
-						<h2 class="ftco-heading-2">Newsletter</h2>
-						<form action="#" class="subscribe-form">
+						<h2 class="ftco-heading-2">Contactenos</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><strong>Teléfono:</strong> +(506) 2443-6868</a></li>
+							<li><a href="#"><strong>Email:</strong> info@tiassa.cr</a></li>
+							<li><a href="#"><strong>Dirección 1:</strong> Alajuela centro, 200 oeste Cementerio General</a></li>
+							<li><a href="#"><strong>Dirección 2:</strong> San Rafael de Alajuela, 300 norte Plantel MECO</a></li>
+						</ul>
+						
+						<form action="#" class="">
 							<div class="form-group">
-								<input type="text" class="form-control mb-2 text-center"
-									placeholder="Enter email address">
-								<input type="submit" value="Subscribe" class="form-control submit px-3">
+								<input type="submit" value="Contactenos" class="form-control submit px-3">
 							</div>
 						</form>
 					</div>
@@ -871,9 +930,8 @@
 					<p>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-							target="_blank">Colorlib</a>
+						<script>document.write(new Date().getFullYear());</script> Todos los Derechos Reservados | Creada por <a href="https://colorlib.com"
+							target="_blank">Poster CR</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
