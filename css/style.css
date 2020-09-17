@@ -8855,7 +8855,7 @@ h1, h2, h3, h4, h5,
     .staff .text .position {
       text-transform: uppercase;
       color: #b3b3b3;
-      color: #FED90F;
+      color: #000000;
       display: block;
       letter-spacing: 1px;
       list-style-type:none;
@@ -9483,7 +9483,7 @@ textarea.form-control {
     .project .text h3 {
       color: #fff; }
       .project .text h3 a {
-        color: #fff; }
+        color: #007bff; }
   .project .icon {
     position: absolute;
     top: -50px;
@@ -9963,7 +9963,8 @@ color: #000;
     margin: 1.25%;
   }
 
-  }
+
+
 
   @media (max-width: 767.98px) {
     #customers img{
@@ -10004,10 +10005,13 @@ color: #000;
   
     #social ul li .icon-facebook {background:#3b5998; padding: 10px 17.5px;} /* Establecemos los colores de cada red social, aprovechando su class */
     #social ul li .icon-instagram {background: #bb3593;}
-    #social ul li .icon-twitter {background: #00abf0;}
+    #social ul li .icon-twitter {background: #00abf0; padding: 10px 14.5px;}
     #social ul li .icon-whatsapp {background: #2caf04;}
+    #social ul li .oi-map-marker {background: #d81c0e; padding: 10px 16px;}
   
     #social ul li a:hover {
       background:  #FED90F; /* Cambiamos el fondo cuando el usuario pase el mouse */
       padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
     }
+
+    
